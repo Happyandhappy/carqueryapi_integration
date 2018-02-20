@@ -1,0 +1,523 @@
+<html><head>
+<style type="text/css">
+.form-container {
+   border: 1px solid #ffffff;
+   background: #DCDCDC;
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   border-radius: 8px;
+   -webkit-box-shadow: rgba(000,000,000,0.9) 0 1px 2px, inset rgba(255,255,255,0.4) 0 0px 0;
+   -moz-box-shadow: rgba(000,000,000,0.9) 0 1px 2px, inset rgba(255,255,255,0.4) 0 0px 0;
+   box-shadow: rgba(000,000,000,0.9) 0 1px 2px, inset rgba(255,255,255,0.4) 0 0px 0;
+   font-family: 'Helvetica Neue',Helvetica,sans-serif;
+   text-decoration: none;
+   vertical-align: middle;
+   min-width:750px;
+   padding:20px;
+   margin: 20px auto;
+   width:90%;
+   height: auto;
+   }
+.form-field {
+	display: block;
+   border: 1px solid #EBAA07;
+   background: #F0F0F0;
+   -webkit-border-radius: 4px;
+   -moz-border-radius: 4px;
+   border-radius: 4px;
+   color: #666;
+   -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+   -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+   box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+   padding:7px;
+   margin:2px auto;
+   width:100%;
+   }
+.questionbox {
+	width: 60%;
+	height: 200px;	
+	}
+.form-field:focus {
+   background: white;
+   color: #000000;
+   text-align: left;
+   }
+.form-container h2 {
+	 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#203047+0,595c63+100 */
+background: #203047; /* Old browsers */
+background: -moz-linear-gradient(top, #203047 0%, #595c63 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #203047 0%,#595c63 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #203047 0%,#595c63 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#203047', endColorstr='#595c63',GradientType=0 ); /* IE6-9 */
+-webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+   -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   text-shadow: #203047 0 1px 0;
+   text-shadow: #595C63 0 1px 0;
+   font-size:18px;
+   margin: 0 0 10px 0;
+   font-weight:bold;
+   text-align:center;
+   padding: 10px 0;
+   color: #FFFFFF;
+    }
+.form-title {
+   margin:10px auto;
+   padding: 0;
+   color: #000000;
+   }
+.submit-container {
+   margin:8px 0;
+   text-align:center;
+   }
+.submit-button {
+   border: 1px solid #447314;
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f2ac4d+0,df521e+100 */
+background: #f2ac4d; /* Old browsers */
+background: -moz-linear-gradient(top, #f2ac4d 0%, #df521e 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #f2ac4d 0%,#df521e 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #f2ac4d 0%,#df521e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ac4d', endColorstr='#df521e',GradientType=0 ); /* IE6-9 */
+   -webkit-border-radius: 12px;
+   -moz-border-radius: 12px;
+   border-radius: 12px;
+   -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   text-shadow: #addc7e 0 1px 0;
+   color: #203047;
+   font-family: helvetica, serif;
+   padding: 8.5px 18px;
+   font-size: 14px;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.half {
+	display: block;
+	float: left;
+	width: 47.5%;	
+}
+.halfr {
+	margin-right: 5%;	
+}
+.city {
+	display: block;
+	width:50%;
+	float: left;	
+	margin-right: 5%;
+	}
+.state {
+	display: block;
+	width:15%;
+	float: left;
+	margin: auto;
+	margin-right: 5%;	
+	}
+.zip {
+	display: block;
+	float: left;
+	width:25%;
+	margin: auto;
+	}   
+.lcolform {
+	display: block;
+	width: 40%;
+	float: left;
+	margin:auto;
+	padding: 5%;
+   }
+.rcolform {
+	display: block;
+	width: 40%;
+	float: left;
+	padding: 5%;
+	margin:auto;
+	}
+.clear {
+	clear: both;	
+	}
+.hidden {
+	display: none; 	
+	}
+.select {
+	background: red;	
+	}
+	.dispo {
+		width: 50%;	
+		text-align: center;
+		margin: 0 auto;
+	}
+	.center {
+		color: black;
+		display: block;
+		margin:10px auto;
+		text-align: center;	
+	}
+	.input {
+		width: 100%;	
+	}
+  </style>
+	
+
+	
+
+</head>
+
+<body style="-ms-zoom: 100%;">(#FORM:BEGIN:pure-form#)
+
+<div class="formbackground">   
+<p class="center">(#Agency Name#)</p>
+<p class="center">(#Memo#)</p> 
+<p class="center">Transfer to: (#Agent Phone Number#)</p>
+
+<label for="FirstName">Allstate Agent ID (for typhoon): </label>
+<input name="Typhoon_AgentID" type="text" value="(#Typhoon_AgentID#)">
+
+<div class="form-container" id="form-container">
+
+
+<div class="form-title"><h2>CONTACT INFORMATION</h2></div>
+
+<div class="lcolform">
+      
+<label for="FirstName">First Name: </label>
+<input name="FirstName" id="FirstName" type="text" value="(#FirstName#)">
+			  
+<br>
+<br>
+				
+<label for="LastName">Last Name: </label>
+<input name="LastName" type="text" value="(#LastName#)">
+				
+<br>
+<br>
+
+<label for="Address">Address: </label>
+<input name="Address" type="text" value="(#Address#)">
+			  
+<br>
+<br>
+				
+<label for="City">City: </label>
+<input name="City" type="text" value="(#City#)">
+				
+<br>
+<br>
+				
+<label for="State">State: </label>
+	<select name="State" id="State">
+            <option value="(#State#)" selected="">(#State#)</option>
+            <option value="AL">Alabama</option>
+            <option value="AK">Alaska</option>
+            <option value="AZ">Arizona</option>
+            <option value="AR">Arkansas</option>
+            <option value="CA">California</option>
+            <option value="CO">Colorado</option>
+            <option value="CT">Connecticut</option>
+            <option value="DE">Delaware</option>
+            <option value="DC">District of Columbia</option>
+            <option value="FL">Florida</option>
+            <option value="GA">Georgia</option>
+            <option value="HI">Hawaii</option>
+            <option value="ID">Idaho</option>
+            <option value="IL">Illinois</option>
+            <option value="IN">Indiana</option>
+            <option value="IA">Iowa</option>
+            <option value="KS">Kansas</option>
+            <option value="KY">Kentucky</option>
+            <option value="LA">Louisiana</option>
+            <option value="ME">Maine</option>
+            <option value="MD">Maryland</option>
+            <option value="MA">Massachusetts</option>
+            <option value="MI">Michigan</option>
+            <option value="MN">Minnesota</option>
+            <option value="MS">Mississippi</option>
+            <option value="MO">Missouri</option>
+            <option value="MT">Montana</option>
+            <option value="NE">Nebraska</option>
+            <option value="NV">Nevada</option>
+            <option value="NH">New Hampshire</option>
+            <option value="NJ">New Jersey</option>
+            <option value="NM">New Mexico</option>
+            <option value="NY">New York</option>
+            <option value="NC">North Carolina</option>
+            <option value="ND">North Dakota</option>
+            <option value="OH">Ohio</option>
+            <option value="OK">Oklahoma</option>
+            <option value="OR">Oregon</option>
+            <option value="PA">Pennsylvania</option>
+            <option value="RI">Rhode Island</option>
+            <option value="SC">South Carolina</option>
+            <option value="SD">South Dakota</option>
+            <option value="TN">Tennessee</option>
+            <option value="TX">Texas</option>
+            <option value="UT">Utah</option>
+            <option value="VT">Vermont</option>
+            <option value="VA">Virginia</option>
+            <option value="WA">Washington</option>
+            <option value="WV">West Virginia</option>
+            <option value="WI">Wisconsin</option>
+            <option value="WY">Wyoming</option>
+            </select>
+			  				
+<label for="ZipCode">Zip: </label>
+<input name="ZipCode" id="ZipCode" type="text" size="5" value="(#ZipCode#)">
+				
+<br>
+<br>
+<br>
+
+</div>
+
+<div class="rcolform">
+    
+<label for="PrimaryPhone">Primary Phone: </label>
+<input name="PrimaryPhone" id="PrimaryPhone" type="text" value="(#PrimaryPhone#)">
+                    
+<br>
+<br>
+                    
+<label for="Alt Phone">Alternate Phone: </label>					 
+<input name="Alt Phone" id="Alt Phone" type="text" value="(#Alt Phone#)">
+         
+<br>
+<br>
+    
+<label for="Email">Email: </label>
+<input name="Email" type="text" value="(#Email#)">
+
+<br>
+<br>
+
+<label for="Spouse">Spouse: </label>
+<input name="Spouse" type="text" value="(#Spouse#)">
+  
+<br>
+<br>
+				
+<label for="Spoke To">Spoke To: </label>
+<input name="Spoke To" id="Spoke To" type="text" value="(#Spoke To#)">
+                    
+</div>
+<div class="clear"></div>
+
+
+<div class="form-title"><h2>VEHICLE INFORMATION</h2></div>
+
+<fieldset class="VEHICLES">
+<legend class="center">VEHICLE</legend>
+
+	<div class="lcolform">
+		<label for="Vehicle1Year">Year: </label>
+		<input name="car-years1" class="Vehicle1Year" id="car-years1" list="Vehicle1Year" placeholder="(#Vehicle1Year#)">
+		<datalist id="Vehicle1Year">
+			<option>1990</option>
+			<option>1991</option>
+			<option>1992</option>
+			<option>1993</option>
+			<option>1994</option>
+			<option>1995</option>
+			<option>1996</option>
+			<option>1997</option>
+			<option>1998</option>
+			<option>1999</option>
+			<option>2000</option>
+			<option>2001</option>
+			<option>2002</option>
+			<option>2003</option>
+			<option>2004</option>
+			<option>2005</option>
+			<option>2006</option>
+			<option>2007</option>
+			<option>2008</option>
+			<option>2009</option>
+			<option>2010</option>
+			<option>2011</option>
+			<option>2012</option>
+			<option>2013</option>
+			<option>2014</option>
+			<option>2015</option>
+			<option>2016</option>
+			<option>2017</option>
+			<option>2018</option>
+			<option>2019</option>
+		</datalist>
+		<!-- <select name="car-years1" id="car-years1" class="Vehicle1Year"></select>   -->
+		<br/><br/>
+		<label for="Vehicle1Make">Make: </label>
+		<input name="car-makes1" class="Vehicle1Year" id="car-makes1" list="Vehicle1Make" placeholder="(#Vehicle1MAkes#)">
+		<datalist id="Vehicle1Make"></datalist>
+
+		<!-- <select name="car-makes1" id="car-makes1" class="Vehicle1Make"></select>  -->
+		<br/><br/>
+		<label for="Vehicle1Model">Model: </label>
+		<input name="car-model1" class="Vehicle1Model" id="car-model1" list="Vehicle1Model" placeholder="(#Vehicle1Model#)">
+		<datalist id="Vehicle1Model"></datalist>
+		<!-- <select name="car-models1" id="car-models1"></select> -->
+		<br/><br/>
+		
+		<label for="Vehicle1Trim">Trim:</label>
+		<input name="car-model-trims1" class="Vehicle1Trim" id="car-model-trims1" list="Vehicle1Trim" placeholder="(#Vehicle1Trim#)">
+		<datalist id="Vehicle1Trim"></datalist>
+		<!-- <select name="car-model-trims1" id="car-model-trims1"></select>  -->
+		<br/><br/>
+
+	</div>
+	<div class="rcolform">                
+</div>
+
+<div class="clear"></div>
+
+<input name="v1CloneVehicle" class="pure-button pure-button-primary center" onclick="cloneVehicle();" type="button" value="Add Vehicle">
+
+</fieldset>
+
+
+<div class="form-title"><h2>AUTO COVERAGE</h2></div>
+
+<br>
+			
+<label for="AutoInsCurrentInsurer">Who are you with now?: </label>
+<input name="AutoInsCurrentInsurer" list="AutoInsCurrentInsurer" placeholder="(#AutoInsCurrentInsurer#)">
+				<datalist id="AutoInsCurrentInsurer">
+					<option value="21ST CENTURY"></option>
+					<option value="AAA"></option>
+					<option value="AARP"></option>
+					<option value="Acceptance"></option>
+					<option value="Aetna"></option>
+					<option value="AIG"></option>
+					<option value="Alfa"></option>
+					<option value="Allied"></option>
+					<option value="Allstate"></option>
+					<option value="American Family"></option>
+					<option value="American General">
+					</option><option value="Amica">
+					</option><option value="Anchor">
+					</option><option value="ATMA">
+					</option><option value="Auto">
+					</option><option value="Auto Club">
+					</option><option value="Auto Owners">
+					</option><option value="Beacon">
+					</option><option value="Bear River">
+					</option><option value="C.N.A.">
+					</option><option value="California Casualty">
+					</option><option value="Chubb Insurance">
+					</option><option value="Cincinnati Insurance">
+					</option><option value="Citizens">
+					</option><option value="Colonial Penn">
+					</option><option value="Commerce">
+					</option><option value="Country Companies">
+					</option><option value="Dairyland">
+					</option><option value="Deer Brook">
+					</option><option value="Direct">
+					</option><option value="Donogal">
+					</option><option value="Encompass">
+					</option><option value="Erie">
+					</option><option value="Esurance">
+					</option><option value="Etna">
+					</option><option value="Farm Bureau">
+					</option><option value="Farmers">
+					</option><option value="FIG">
+					</option><option value="Fiermans Fund">
+					</option><option value="Flagship">
+					</option><option value="Foremost">
+					</option><option value="Fred">
+					</option><option value="Garland Insurance">
+					</option><option value="Geico">
+					</option><option value="General">
+					</option><option value="General Accident">
+					</option><option value="GMAC">
+					</option><option value="Grainge">
+					</option><option value="Grainger">
+					</option><option value="Great American">
+					</option><option value="Hanover">
+					</option><option value="Harleysville">
+					</option><option value="Hartford">
+					</option><option value="Horace Mann">
+					</option><option value="Illinois Farmers">
+					</option><option value="Independent">
+					</option><option value="Infinity">
+					</option><option value="Kemper Insurance Co.">
+					</option><option value="Keystone">
+					</option><option value="Liberty Mutual">
+					</option><option value="Loya">
+					</option><option value="Mercury">
+					</option><option value="Met-Life">
+					</option><option value="Metropolitan">
+					</option><option value="Mutual of Enum Claw">
+					</option><option value="N.J. Manufacturers">
+					</option><option value="N.Y. Central Mutual">
+					</option><option value="Nationwide">
+					</option><option value="No Fault">
+					</option><option value="Ohio Casualty">
+					</option><option value="Orion">
+					</option><option value="Peerless Insurance">
+					</option><option value="Pemco">
+					</option><option value="Premier">
+					</option><option value="Prime America">
+					</option><option value="Primerica Insurance">
+					</option><option value="Progressive">
+					</option><option value="Providion">
+					</option><option value="Prudential">
+					</option><option value="Reliance">
+					</option><option value="Reliant">
+					</option><option value="Safe">
+					</option><option value="Safe Co">
+					</option><option value="Selective">
+					</option><option value="Shelter">
+					</option><option value="St. Paul Company">
+					</option><option value="State">
+					</option><option value="State Farm">
+					</option><option value="T.I.G.">
+					</option><option value="Travelers">
+					</option><option value="United Auto">
+					</option><option value="USAA">
+					</option><option value="USFG">
+					</option><option value="Vicking">
+					</option><option value="Westfield">
+					</option><option value="Other">
+					</option><option value="No Insurance">
+					</option><option value="Unsure"></option>
+            	</datalist>
+			
+<p>Are you between 18 and 75? <input name="between18_75" id="between18_75" type="checkbox" value="Yes"></p>
+<p>Have you had a license for at least 3 years? <input name="licensefor3years" id="licensefor3years" type="checkbox" value="Yes"></p>		  
+<br>
+<div class="form-title"><h2>NOTES SECTION</h2></div>
+<div class="center">
+<textarea name="Notes" class="form-field questionbox" id="Notes" type="text" size="150">(#Notes#)</textarea>
+</div>
+<br>
+<br>
+<!--
+<div class="submit-container">
+<input id="saveForm" class="submit-button" type="submit" name="submit" value="Submit" />
+-->
+
+<!-- Submit Button -->
+
+<input name="manager" type="hidden" value="thestevesandberg@gmail.com">
+<input name="Disposition" id="Disposition" type="hidden" value="Lead">
+<input name="sys_GO BACK" id="sys_GO BACK" type="hidden" value="LeadV1.5">
+
+  <!--<input name="sys_SAVE INFO" id="sys_SAVE INFO" type="hidden" value="LeadV1.5"><input name="SUBMIT_AND_NAVIGATE" class="pure-button pure-button-primary" id="SUBMIT_AND_NAVIGATE" onClick="cleardispo()" type="submit" value="SAVE INFO">-->
+  
+<input name="sys_DISPOSITION AS LEAD" id="sys_DISPOSITION AS LEAD" type="hidden" value="manager"><input name="SUBMIT_AND_EMAIL" class="pure-button pure-button-primary" id="SUBMIT_AND_EMAIL" type="submit" value="DISPOSITION AS LEAD">
+<input name="datetime" id="datetime" type="hidden" value="Fri Jan 26 12:46:31 EST 2018">
+		
+<input class="pure-button pure-button-primary" onclick="return confirm('This will reset all&#10;data')" type="reset" value="Reset Data">             
+
+<p>&nbsp;</p>
+
+
+
+</div>
+
+</div>
+(#FORM:END:pure-form#)
+<script type="text/javascript" src="http://www.carqueryapi.com/js/jquery.min.js"></script>
+<script type="text/javascript" src="added.js"></script>
+</body></html>
